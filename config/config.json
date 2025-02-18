@@ -1,0 +1,29 @@
+{
+    "email": {
+      "smtp_server": "smtp.gmail.com",
+      "smtp_port": 587,
+      "email_address": "tu_correo@gmail.com",
+      "password": "tu_contraseña",
+      "from_name": "Nombre Remitente",
+      "to": ["destinatario1@dominio.com", "destinatario2@dominio.com"],
+      "cc": ["cc1@dominio.com", "cc2@dominio.com"],
+      "subject": "Asunto del Correo",
+      "body": "Este es el cuerpo del correo con el reporte adjunto."
+    },
+    "report": {
+      "excel_filename": "reporte_final.xlsx",
+      "sheets": [
+        {
+          "sql_file": "consulta1.sql",
+          "excel_sheet_name": "Reporte_1",
+          "db_connection_string": "DRIVER={SQL Server};SERVER=servidor;DATABASE=base_de_datos_1;UID=usuario1;PWD=contraseña1"
+        },
+        {
+          "sql_file": "consulta2.sql",
+          "excel_sheet_name": "Reporte_2",
+          "db_connection_string": "DRIVER={SQL Server};SERVER=servidor;DATABASE=base_de_datos_2;UID=usuario2;PWD=contraseña2"
+        }
+      ]
+    }
+  }
+  
